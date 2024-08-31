@@ -2,7 +2,7 @@
   "name": "backend",
   "private": true,
   "scripts": {
-    "start": "meteor --settings settings.json --port 80"
+    "start": "meteor --settings settings.json --port 3000"
   },
   "dependencies": {
     "@babel/runtime": "7.19.0",
