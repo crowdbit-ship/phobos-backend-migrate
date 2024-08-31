@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🚢 Backend (ICC-DRS)",
+      "type": "shell",
+      "command": "yarn run ship:icc-drs",
+      "presentation": {
+        "reveal": "silent",
+        "group": "phobos-ship",
+        "panel": "dedicated"
+      },
+      "detail": "ship backend --platform=phobos --envi=icc-drs",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "nameInput",
+      "type": "promptString",
+      "description": "New component name"
+      // type specific configuration attributes
+    },
+    {
+      "id": "phobosPortalInput",
+      "options": [
+        "viewer",
+        "cms",
+        "backstage",
+        "hq",
+        "form",
+        "broadcast",
+        "calc"
+      ],
+      "type": "pickString",
+      "description": "Portal name"
+      // type specific configuration attributes
+    },
+    {
+      "id": "envPortalInput",
+      "options": ["po", "", "po2", "icc", "poIp"],
+      "type": "pickString",
+      "description": "Remote environment name"
+      // type specific configuration attributes
+    },
+    {
+      "id": "globInput",
+      "type": "promptString",
+      "description": "Glob pattern"
+      // type specific configuration attributes
+    }
+  ]
+}

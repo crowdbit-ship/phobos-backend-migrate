@@ -1,0 +1,18 @@
+export const APP_USER_FIELDS_ALLOWED = {
+  _id: 1,
+  _ts: 1,
+  pub: 1,
+  del: 1,
+  title: 1,
+  img: 1,
+  user: 1,
+  support: 1,
+  portal: 1,
+  playStore: 1,
+  appStore: 1,
+  legalNotice: 1,
+  policyUrl: 1,
+  agreeV: 1,
+  showAgree: 1,
+  showOnboard: 1,
+}
